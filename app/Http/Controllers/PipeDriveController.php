@@ -18,7 +18,7 @@ class PipeDriveController extends Controller
     }
 
     /**
-     * Retrieve all deals from Pipedrive.
+     * Pega todas as oportunidades do Pipedrive.
      */
     public function getDeals()
     {
@@ -36,7 +36,7 @@ class PipeDriveController extends Controller
     }
 
     /**
-     * Retrieve a specific deal by ID from Pipedrive.
+     * Pega uma oportunidade específica do Pipedrive.
      * 
      * @param int $id Deal ID
      */
@@ -54,9 +54,9 @@ class PipeDriveController extends Controller
             return response()->json(['error' => 'Request failed'], $response->status());
         }
     }
-    
+
     /**
-     * Update an existing deal in Pipedrive.
+     * Alterar oportunidade no Pipedrive.
      * 
      * @param Request $request
      * @param int $id Deal ID
